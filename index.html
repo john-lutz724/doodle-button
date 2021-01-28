@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cool page of buttons</title>
+</head>
+
+<body>
+<div class="doddle">
+
+    <!-- left bar of songs -->
+    <div class="songs">
+        <div>
+            <button class="songButton">
+                <img class="songButton" src="images/number1.png" style="width: 100px; height: 100px;"
+                    onclick="playPause1()">
+            </button>
+        </div>
+
+        <div>
+            <button class="songButton">
+                <img class="songButton" src="images/number2.jpg" style="width: 100px; height: 100px;"
+                onclick="playPause2()">
+            </button>
+        </div>
+
+        <div>
+            <button class="songButton">
+                <img class="songButton" src="images/number3.png" style=" width: 100px;height: 100px;"
+                onclick="playPause3()">
+                
+
+            </button>
+        </div>
+
+        <div>
+            <button class="songButton">
+                <img class="songButton" src="images/number4.jpg" style=" width: 100px;height: 100px;"
+                onclick="playPause4()">
+            </button>
+        </div>
+    </div>
+
+    <!-- draw pad in middle -->
+    <div class="doodlepad">
+    <canvas id="canvas"></canvas>
+
+ </div>
+
+    
+    <!-- right bar of colors -->
+    <div class="colors">
+        <div>
+            <button onclick="changeColor1()" class="colorButton"  id="greenBut">green!</button>
+        </div>
+        <div>
+            <button onclick="changeColor2()" class="colorButton" id="blueBut">blue!</button>
+        </div>
+        <div>
+            <button onclick="changeColor4()" class="colorButton" id="purpleBut">purple!</button>
+        </div>
+        <div>
+            <button onclick="changeColor5()" class="colorButton" id="orangeBut">orange!</button>
+        </div>
+        <div>
+            <button onclick="changeColor6()" class="colorButton" id="pinkBut">pink!</button>
+        </div>
+        <div>
+            <button onclick="changeColor7()" class="colorButton" id="yellowBut">yellow!</button>
+        </div>
+        <div>
+            <button onclick="changeColor8()" class="colorButton" id="redBut">red!</button>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- bottem bar of sound   -->
+<div class="sounds">
+        <div>
+            <button class="soundButton" id="dogButton" onclick="playSound1()">
+                <img class="soundButton" src="images/dog.png" style="width: 200px; height: 175px;">
+            </button>
+        </div>
+
+        <div>
+            <button class="soundButton" id="bombButton" onclick="playSound2()">
+                <img class="soundButton" src="images/cat.png" style="width: 200px; height: 175px;">
+            </button>
+        </div>
+
+        <div>
+            <button class="soundButton" id="catButton" onclick="playSound3()">
+                <img class="soundButton" src="images/bomb.jpg" style="width: 200px; height: 175px;">
+            </button>
+        </div>
+
+        <div>
+            <button class="soundButton" id="horseButton">
+                <img class="soundButton" src="images/horse.jpg" style="width: 200px; height: 175px;"
+                    onclick="playSound4()">
+            </button>
+        </div>
+
+        <div>
+            <button class="soundButton" id="pigButton" onclick="playSound5()">
+                <img class="soundButton" src="images/pig.jpg" style="width: 200px; height: 175px;">
+            </button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- Coded by John Lutz 1/27/21 -->
+ 
+
+
+
+
+
+
+

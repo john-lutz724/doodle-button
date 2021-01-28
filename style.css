@@ -1,0 +1,79 @@
+.doddle{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 55px;  
+    width: 150px;
+    
+}
+
+ .colorButton{
+     font-size: 25px;
+     height: 65px;
+     width: 150px;
+     border-radius: 25%;
+ }
+
+
+#greenBut{background-color: green;}
+#blueBut{background-color: blue;}
+#purpleBut{background-color: purple;}
+#orangeBut{background-color: rgba(255, 136, 0, 0.884);}
+#pinkBut{background-color: rgb(248, 170, 183);}
+#yellowBut{background-color: yellow;}
+#redBut{background-color: red;}
+
+
+.soundButton{
+    border-radius: 25%;
+}
+
+.sounds{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.songs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+    
+    
+    
+
+
+.songButton{
+    border-radius: 25%;
+}   
+
+
+#canvas{
+    display: flex;
+    border: 10px solid black;
+    border-radius: 3%;
+}    
+    
+
+/* Coded by John Lutz 1/27/21 */
+
+       
+
+
+
+   
+    
+    
+
+
+
