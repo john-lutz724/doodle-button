@@ -148,6 +148,9 @@ function playPause1() {
 canvas.addEventListener("mousedown", startPosition);
 canvas.addEventListener("mouseup", finishedPosition);
 canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("touchstart", startPosition);
+canvas.addEventListener("touchend", finishedPosition);
+canvas.addEventListener("touchmove",draw );
 
 });
 
@@ -160,50 +163,6 @@ function playSound3(){
    clear();
 }
 
-function sketchpad_touchStart() {
-    getTouchPos();
-    drawDot(ctx,touchX,touchY,12);
-    event.preventDefault();
-    }
-
-    function sketchpad_touchMove(e) { 
-        getTouchPos(e);
-        drawDot(ctx,touchX,touchY,12);
-        event.preventDefault();
-    }
-
-
-    function getTouchPos(e) {
-        if (!e)
-            var e = event;
-
-        if(e.touches) {
-            if (e.touches.length == 1) { 
-                var touch = e.touches[0]; 
-                touchX=touch.pageX-touch.target.offsetLeft;
-                touchY=touch.pageY-touch.target.offsetTop;
-            }
-        }
-    }
-
-    function init() {
-        canvas = document.getElementById('sketchpad');
-
-        if (canvas.getContext)
-            ctx = canvas.getContext('2d');
-
-
-            if (ctx) {
-                
-                canvas.addEventListener('mousedown', sketchpad_mouseDown, false);
-                canvas.addEventListener('mousemove', sketchpad_mouseMove, false);
-                window.addEventListener('mouseup', sketchpad_mouseUp, false);
-    
-               
-                canvas.addEventListener('touchstart', sketchpad_touchStart, false);
-                canvas.addEventListener('touchmove', sketchpad_touchMove, false);
-            }
-        }
 
         // Coded by John Lutz 1/27/21
   
